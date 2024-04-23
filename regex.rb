@@ -26,10 +26,10 @@ def parse_log_entry(log)
 end
 
 p extract_hashtags("Love this #beautiful day! #sunny")
-p valid_password?("Passw0rd")
-p valid_password?("pass")
-p find_numbers("The order was placed for 100.25 units at a price of 20.75 each.")
-p valid_date?("2023-03-15")
-p valid_date?("15-03-2023")
-log_entry = "ERROR: Disk space low"
-p parse_log_entry(log_entry).inspect
+#p valid_password?("Passw0rd")
+#p valid_password?("pass")
+#p find_numbers("The order was placed for 100.25 units at a price of 20.75 each.")
+#p valid_date?("2023-03-15")
+#p valid_date?("15-03-2023")
+#log_entry = "ERROR: Disk space low"
+#p parse_log_entry(log_entry).inspect

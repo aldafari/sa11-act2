@@ -5,7 +5,7 @@ def extract_hashtags(text)
 end
 
 def valid_password?(password)
-  pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,16}$/
+  pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,16}$/
   password.match?(pattern)
 end
 

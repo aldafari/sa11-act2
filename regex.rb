@@ -5,7 +5,7 @@ def extract_hashtags(text)
 end
 
 def valid_password?(password)
-  pattern = nil
+  pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,16}$/
   password.match?(pattern)
 end
 
@@ -25,8 +25,8 @@ def parse_log_entry(log)
   [match[1], match[2]] if match
 end
 
-p extract_hashtags("Love this #beautiful day! #sunny")
-#p valid_password?("Passw0rd")
+#p extract_hashtags("Love this #beautiful day! #sunny")
+p valid_password?("Passw0rd")
 #p valid_password?("pass")
 #p find_numbers("The order was placed for 100.25 units at a price of 20.75 each.")
 #p valid_date?("2023-03-15")
